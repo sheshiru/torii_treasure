@@ -21,7 +21,7 @@
       level: 3,
       lives: 2,
       enigma: "Never odd or eveN" + "&nbsp;" + "&nbsp;",
-      clue: "./../pics/symetrie_clue.png"
+      clue: "./pics/symetrie_clue.png"
     },
 
     lvl3: {
