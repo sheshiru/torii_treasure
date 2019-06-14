@@ -255,9 +255,9 @@ GAME
   top: 75px;
   left: 70px;
 }
-.kois {
+/* .kois {
   display: flex;
-}
+} */
 .koi:first-child {
   margin-right: 0.5rem;
 }
@@ -358,7 +358,7 @@ GAME
 .roc {
   position: absolute;
   left: 66%;
-  top: 61%;
+  top: 57vh;
 }
 .roc img {
   width: 20rem;
