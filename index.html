@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <audio id="myAudio">
+      <source src="./sound/Ghibli_musics.m4a" type="audio/mp3" />
+    </audio>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./js/game.js"></script>
+    <title>Torii Treasure</title>
+  </head>
+
+  <body>
+    <div id="big-wrapper" class="bg">
+      <!-- Gestion ecrans (win lose start) opacite-->
+      <div class="state-screen-container">
+        <div class="bg_opacity is-active"></div>
+        <h2 class="game-over">
+          <span>G</span><span>A</span><span>M</span><span>E</span> <span>O</span
+          ><span>V</span><span>E</span><span>R</span>
+        </h2>
+        <!-- <h2 class="success">YOU WIN</h2> -->
+        <div class="btn-start-container">
+          <button class="start">START</button>
+        </div>
+      </div>
+
+      <div class="top-content">
+        <div class="btn-top-left-container">
+          <div class="btn-sound-container">
+            <img
+              class="btn-no-sound is-active"
+              src="./pics/speaker.svg"
+              alt="mute"
+            />
+            <img class="btn-sound" src="./pics/mute.svg" alt="speaker" />
+          </div>
+          <img class="btn-help" src="./pics/help.svg" alt="help" />
+        </div>
+
+        <div id="myPopup" class="popup">
+          <!-- helpPopup content -->
+          <div class="popup-content">
+            <span class="close">&times;</span>
+            <p>
+              Try to access the Torii Treasure ! <br />
+              Find combinations of 4 digits only and press Enter.<br />
+              Clues are hidden in the scene to allow you resolve levels. <br />
+              You MUST use it. <br />
+              You are advised to take a pen and paper to resolve all next
+              levels.
+              <br />
+              Pay attention on how the numbers are written in the clues. <br />
+              You have two tries per level otherwise it’s Game Over. <br />
+              Good luck !
+            </p>
+          </div>
+        </div>
+
+        <div class="title">
+          <h1>TORII TREASURE</h1>
+        </div>
+        <div class="codes-soluce-container">
+          <div class="code-soluce lvl1"></div>
+          <div class="code-soluce lvl2"></div>
+          <div class="code-soluce lvl3"></div>
+        </div>
+      </div>
+      <!-- Torii-->
+      <div class="game-main-container">
+        <div class="board">
+          <p class="enigmes"></p>
+        </div>
+        <div class="torii">
+          <img src="./pics/torii-final.svg" alt="torii" />
+          <div class="kois-container">
+            <div class="kois">
+              <img
+                id="koi-one"
+                class="koi swing"
+                src="./pics/koi.png"
+                alt="koi"
+              />
+              <img
+                id="koi-two"
+                class="koi swing2"
+                src="./pics/koi.png"
+                alt="koi"
+              />
+            </div>
+          </div>
+          <div class="prediction">
+            <p></p>
+            <div class="prediction-curtain">
+              <div class="pane1-container">
+                <div class="pane1"></div>
+              </div>
+              <div class="pane2-container">
+                <div class="pane2"></div>
+              </div>
+              <div class="pane3-container">
+                <div class="pane3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="input-container">
+          <input
+            class="input"
+            id="answer"
+            type="text"
+            maxlength="4"
+            autocomplete="off"
+            placeholder=""
+          />
+        </div>
+        <!-- Roc -->
+        <div class="roc">
+          <img src="./pics/roc.png" alt="roc" />
+        </div>
+
+        <!-- daruma -->
+        <div class="absolute">
+          <div class="darumas-container">
+            <div class="daruma-happy-anim">
+              <img
+                class="daruma-happy"
+                src="./pics/daruma_happy.png"
+                alt="daruma_happy"
+              />
+            </div>
+
+            <img
+              class="daruma-angry"
+              src="./pics/daruma_angry.png"
+              alt="daruma_angry"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
