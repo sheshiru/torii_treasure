@@ -29,7 +29,7 @@
       level: 2,
       lives: 2,
       enigma: "Deal with your « nega »",
-      clue: "./../pics/nega.png"
+      clue: "./pics/nega.png"
     },
     lvl4: {
       comb: "5713",
