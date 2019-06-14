@@ -354,11 +354,16 @@ GAME
 #big-wrapper > div.game-main-container > div.absolute > div > img.daruma-angry {
   position: absolute;
 }
-
+.roc-absolute {
+  position: absolute;
+  top: 64%;
+  left: 66.3%;
+}
 .roc {
   position: absolute;
-  left: 68%;
-  top: 56vh;
+}
+.roc-container {
+  position: relative;
 }
 .roc img {
   width: 18rem;
