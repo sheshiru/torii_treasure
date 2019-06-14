@@ -357,11 +357,11 @@ GAME
 
 .roc {
   position: absolute;
-  left: 66%;
-  top: 57vh;
+  left: 68%;
+  top: 56vh;
 }
 .roc img {
-  width: 20rem;
+  width: 18rem;
 }
 
 .state-screen-container {
